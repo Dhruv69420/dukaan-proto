@@ -10,7 +10,7 @@ function App() {
       <div className="bg-[#1E2640] h-screen">
         <SideBar />
       </div>
-      <div className="bg-[#FAFAFA] flex flex-col w-full">
+      <div className="bg-[#FAFAFA] flex flex-col w-full overflow-x-auto">
         <div className="w-full relative">
           <Header />
         </div>

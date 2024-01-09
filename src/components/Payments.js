@@ -17,23 +17,23 @@ const Payments = () => {
   };
 
   return (
-    <div className="px-10 relative mt-[67px]">
+    <div className="px-8 xl:px-10 relative mt-[67px]">
       <div className="w-full pt-8">
         <div className="w-full flex justify-between items-center">
           <p className="text-xl font-medium text-primaryBlack">Overview</p>
           <div onClick={()=>setShowTimeMenu(!showTimeMenu)} className="cursor-pointer w-[131px] text-[#4C4C4C] relative border-[1px] border-[#D9D9D9] rounded-md py-2 px-3 flex gap-2 items-center justify-between text-base bg-white">
             { currentTimeFilter }
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 fill-none stroke-[#4C4C4C] stroke-2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4 fill-none stroke-[#4C4C4C] stroke-2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
             </svg> 
             <div className={`text-[#4C4C4C] absolute w-full ${showTimeMenu ? "top-11 opacity-100" : "top-9 opacity-0"} transition-all duration-300 left-0 shadow-md bg-white rounded-md`}>
-              <div id="Last Week" onClick={(e)=>setCurrentTimeFilter(e.target.id)} className="text-[#4C4C4C] text-sm border-b-[1px] border-[#D9D9D9] px-3 py-2 hover:bg-[#F2F2F2]">
+              <div id="Last Week" onClick={(e)=>setCurrentTimeFilter(e.target.id)} className="text-[#4C4C4C] text-sm border-b-[1px] border-[#d9d9d960] px-3 py-2 hover:bg-[#F2F2F2]">
                 Last Week
               </div>
-              <div id="Last Month" onClick={(e)=>setCurrentTimeFilter(e.target.id)} className="text-[#4C4C4C] text-sm border-b-[1px] border-[#D9D9D9] px-3 py-2 hover:bg-[#F2F2F2]">
+              <div id="Last Month" onClick={(e)=>setCurrentTimeFilter(e.target.id)} className="text-[#4C4C4C] text-sm border-b-[1px] border-[#d9d9d960] px-3 py-2 hover:bg-[#F2F2F2]">
                 Last Month
               </div>
-              <div id="Last Year" onClick={(e)=>setCurrentTimeFilter(e.target.id)} className="text-[#4C4C4C] text-sm border-b-[1px] border-[#D9D9D9] px-3 py-2 hover:bg-[#F2F2F2]">
+              <div id="Last Year" onClick={(e)=>setCurrentTimeFilter(e.target.id)} className="text-[#4C4C4C] text-sm border-b-[1px] border-[#d9d9d960] px-3 py-2 hover:bg-[#F2F2F2]">
                 Last Year
               </div>
             </div>                       
@@ -65,12 +65,12 @@ const Payments = () => {
                   Sort
                 </p>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-[1.5] stroke-[#4C4C4C] w-4 h-4" style={{ transform: "rotateY(180deg)" }}>
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5 7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 7.5 7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
                 </svg>
               </div>
               <div className="cursor-pointer px-2 border-[1px] border-[#D9D9D9] shadow-sm flex items-center rounded-md">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="stroke-[1.5] stroke-[#4C4C4C] w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                 </svg>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Payments = () => {
             </thead>              
             <tbody>
               { tableData.map((item, index)=>(
-                <tr key={"row"+index} className="grid grid-cols-4 px-2 py-[10px] border-b-[1px] border-[#D9D9D9]">
+                <tr key={"rowNo"+index} className="grid grid-cols-4 px-2 py-[10px] border-b-[1px] border-[#D9D9D9]">
                   <td className="text-[#146EB4] text-start font-medium">#281209</td>
                   <td className="text-start">7 July, 2023</td>
                   <td className="text-end">₹12,78.23</td>
