@@ -23,7 +23,7 @@ const Header = () => {
                 </svg>
             </div>
             <div className="bg-[#E6E6E6] rounded-full w-9 h-9 p-2 flex items-center justify-center cursor-pointer">
-                <img src="/images/down.png" className="w-[14px]"/>
+                <img src="/dukaan-proto/images/down.png" className="w-[14px]"/>
             </div>
         </div>
     </div>

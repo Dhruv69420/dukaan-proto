@@ -48,7 +48,7 @@ const SideBar = () => {
     <div className="h-full flex flex-col overflow-y-auto">
         <div className="flex px-4 pt-4 items-center">
             <div className="w-12 h-12 rounded-md overflow-hidden cursor-pointer">
-                <img src="/images/brandIcon.webp" className="object-cover w-full h-full" />
+                <img src="/dukaan-proto/images/brandIcon.webp" className="object-cover w-full h-full" />
             </div>
             <div className="flex flex-col grow ml-3">
                 <p className="text-white text-lg">

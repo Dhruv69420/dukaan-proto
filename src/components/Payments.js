@@ -83,7 +83,7 @@ const Payments = () => {
                   <span>
                     Order date                    
                   </span>
-                  <img src="/images/down.png" className="w-[7px] h-[5px]"/>
+                  <img src="/dukaan-proto/images/down.png" className="w-[7px] h-[5px]"/>
                 </th>
                 <th className="font-medium text-end">Order amount</th>
                 <th className="font-medium text-end">Transaction fees</th>
