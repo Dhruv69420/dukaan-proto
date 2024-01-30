@@ -3,7 +3,7 @@ import './App.css';
 import SideBar from './components/SideMenu';
 import Payments from './components/Payments';
 import Header from './components/Header';
-
+//verifying git reconfig
 function App() {
   return (
     <div className="flex font-roboto">      
